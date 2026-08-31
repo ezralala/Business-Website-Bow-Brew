@@ -486,64 +486,128 @@ body {
 /* MOBILE RESPONSIVE STYLES                   */
 /* ========================================== */
 @media screen and (max-width: 768px) {
-    /* Prevent page horizontal scrolling */
+    /* Prevent side scrolling & layout distortion */
     html, body {
         overflow-x: hidden !important;
         width: 100% !important;
     }
 
-    /* Ribbon Line Fix - Pinagkakasya sa screen ng phone */
+    /* Header Fixes */
+    .main-header {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 10px 15px !important;
+    }
+
+    .header-logo-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    .header-logo-img {
+        height: 40px !important;
+        margin-right: 0 !important;
+    }
+
+    .header-site-title {
+        font-size: 28px !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+    }
+
+    /* Navigation Links */
+    .main-nav ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 12px !important;
+        margin-top: 10px !important;
+        padding: 0 !important;
+    }
+
+    .main-nav ul li {
+        margin-left: 0 !important;
+    }
+
+    .main-nav ul li a {
+        font-size: 14px !important;
+    }
+
+    /* Hero Section Fixes */
+    .hero-section {
+        height: auto !important;
+        padding: 30px 15px !important;
+    }
+
+    .hero-main-logo {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+        line-height: 1.1 !important;
+    }
+
+    .hero-slogan {
+        font-size: 18px !important;
+    }
+
+    .hero-description {
+        font-size: 14px !important;
+    }
+
+    /* General Typography Fixes */
+    .section-title {
+        font-size: 32px !important;
+    }
+
+    .feature-title,
+    .why-us-feature-item .feature-title,
+    .about-feature-item .feature-title {
+        font-size: 20px !important;
+    }
+
+    .feature-text,
+    .why-us-feature-item {
+        font-size: 15px !important;
+    }
+
+    /* Fix Grid Widths & Review Cards */
+    .about-features-grid,
+    .why-us-features-grid,
+    .reviews-grid,
+    .contact-layout-wrapper {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 0 !important;
+    }
+
+    .review-card,
+    .menu-card,
+    .contact-details-column,
+    .contact-form-column {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .gallery-img {
+        width: 47% !important;
+        height: 120px !important;
+    }
+
+    /* Ribbon Line Fix for Mobile Screens */
     .about-section::after, 
     .menu-section::after, 
     .why-us-section::after, 
     .gallery-section::after, 
     .reviews-section::after, 
     .contact-section::after {
-        content: "⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹" !important; /* Maikling ribbon para hindi lumagpas */
-        font-size: 16px !important;
+        content: "⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹" !important;
+        font-size: 14px !important;
         white-space: nowrap !important;
-    }
-
-    /* Review Card Fix - Ginagawang buong lapad */
-    .reviews-grid {
-        flex-direction: column !important;
-        gap: 20px !important;
-        align-items: center !important;
-    }
-
-    .review-card {
-        width: 100% !important; /* Full width para hindi maipit ang text */
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    /* Section Padding Adjustments */
-    .about-section, 
-    .menu-section, 
-    .why-us-section, 
-    .gallery-section, 
-    .reviews-section, 
-    .contact-section {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-
-    /* Grid Layout Adjustments */
-    .about-features-grid,
-    .why-us-features-grid,
-    .contact-layout-wrapper {
-        flex-direction: column !important;
-        gap: 20px !important;
-    }
-
-    .contact-details-column,
-    .contact-form-column,
-    .menu-card {
-        width: 100% !important;
-    }
-
-    .gallery-img {
-        width: 47% !important;
-        height: 130px !important;
     }
 }
