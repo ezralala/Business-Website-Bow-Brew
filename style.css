@@ -314,7 +314,7 @@ body {
 }
 
 /* ========================================== */
-/* 5. WHY CHOOSE US SECTION                   */
+/* 5. WHY CHOOSE US SECTION                  */
 /* ========================================== */
 .why-us-section {
     background-color: #fde8ed;
@@ -333,10 +333,11 @@ body {
     text-align: center;
     padding: 0 10px;
 }
-.why-us-feature-item .feature-title {
-    font-size: 40px;
-}
 
+/* Specific size para sa Why Choose Us lang */
+.why-us-feature-item .feature-title {
+    font-size: 28px;
+}
 /* ========================================== */
 /* 6. GALLERY SECTION                         */
 /* ========================================== */
