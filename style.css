@@ -225,12 +225,18 @@ body {
     padding: 0 10px;
 }
 
-.about-feature-item .feature-title {
+.feature-title {
     font-style: italic;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
     color: #b56576;
     margin-bottom: 15px;
+}
+
+.feature-text {
+    font-size: 18px;
+    color: #b56576;
+    line-height: 1.6;
 }
 
 /* ========================================== */
