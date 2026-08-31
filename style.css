@@ -486,86 +486,51 @@ body {
 /* MOBILE RESPONSIVE STYLES                   */
 /* ========================================== */
 @media screen and (max-width: 768px) {
-    /* Header Layout Fixes */
-    .main-header {
+    /* Prevent page horizontal scrolling */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    /* Ribbon Line Fix - Pinagkakasya sa screen ng phone */
+    .about-section::after, 
+    .menu-section::after, 
+    .why-us-section::after, 
+    .gallery-section::after, 
+    .reviews-section::after, 
+    .contact-section::after {
+        content: "⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹" !important; /* Maikling ribbon para hindi lumagpas */
+        font-size: 16px !important;
+        white-space: nowrap !important;
+    }
+
+    /* Review Card Fix - Ginagawang buong lapad */
+    .reviews-grid {
         flex-direction: column !important;
+        gap: 20px !important;
         align-items: center !important;
-        padding: 10px 5% !important;
     }
 
-    .header-logo-container {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
+    .review-card {
+        width: 100% !important; /* Full width para hindi maipit ang text */
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    .header-logo-img {
-        height: 50px !important;
-        margin-right: 0 !important;
-        margin-bottom: 5px !important;
+    /* Section Padding Adjustments */
+    .about-section, 
+    .menu-section, 
+    .why-us-section, 
+    .gallery-section, 
+    .reviews-section, 
+    .contact-section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 
-    .header-site-title {
-        font-size: 32px !important;
-        line-height: 1.1 !important;
-    }
-
-    /* Navigation Links */
-    .main-nav ul {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 6px 10px !important;
-        padding: 0 !important;
-        margin-top: 10px !important;
-    }
-
-    .main-nav ul li {
-        margin-left: 0 !important;
-    }
-
-    .main-nav ul li a {
-        font-size: 14px !important;
-    }
-
-    /* Hero Banner Text */
-    .hero-section {
-        height: auto !important;
-        padding: 30px 15px !important;
-    }
-
-    .hero-main-logo {
-        width: 90px !important;
-        height: 90px !important;
-    }
-
-    .hero-title {
-        font-size: 38px !important;
-    }
-
-    .hero-slogan {
-        font-size: 18px !important;
-    }
-
-    .hero-description {
-        font-size: 14px !important;
-    }
-
-    /* Section Headers */
-    .section-title {
-        font-size: 36px !important;
-    }
-
-    .feature-title,
-    .why-us-feature-item .feature-title,
-    .about-feature-item .feature-title {
-        font-size: 20px !important;
-    }
-
-    /* Column Layouts to 1-Column */
+    /* Grid Layout Adjustments */
     .about-features-grid,
     .why-us-features-grid,
-    .reviews-grid,
     .contact-layout-wrapper {
         flex-direction: column !important;
         gap: 20px !important;
@@ -579,6 +544,6 @@ body {
 
     .gallery-img {
         width: 47% !important;
-        height: 120px !important;
+        height: 130px !important;
     }
 }
