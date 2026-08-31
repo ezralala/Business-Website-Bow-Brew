@@ -482,3 +482,52 @@ body {
     color: #b56576;
     text-decoration: none;
 }
+/* ========================================== */
+/* MOBILE RESPONSIVE STYLES                   */
+/* ========================================== */
+@media screen and (max-width: 768px) {
+    /* Layout alignment para sa mobile */
+    .about-features-grid,
+    .why-us-features-grid,
+    .reviews-grid,
+    .contact-layout-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-details-column,
+    .contact-form-column,
+    .menu-card {
+        width: 100%;
+    }
+
+    .gallery-img {
+        width: 48%;
+    }
+
+    .main-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+    }
+
+    /* Pagkasyahin ang decorative ribbon dividers sa screen ng phone */
+    .about-section::after, 
+    .menu-section::after, 
+    .why-us-section::after, 
+    .gallery-section::after, 
+    .reviews-section::after, 
+    .contact-section::after {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
