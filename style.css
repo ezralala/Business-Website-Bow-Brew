@@ -333,6 +333,9 @@ body {
     text-align: center;
     padding: 0 10px;
 }
+.why-us-feature-item .feature-title {
+    font-size: 28px;
+}
 
 /* ========================================== */
 /* 6. GALLERY SECTION                         */
